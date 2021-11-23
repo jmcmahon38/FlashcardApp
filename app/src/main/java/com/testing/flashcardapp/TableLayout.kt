@@ -14,13 +14,17 @@ class TableLayout : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.table_layout)
 
+        // used to determine if this question will be added
+        val checkBox = findViewById<CheckBox>(R.id.idCheckBox1)
+
         //use list of Question objects to call on flashcard screen
         var questionList = mutableListOf<Question>()
 
+        // change screen on start -- this will go to the 3rd screen
+        //  but testing use of passing data here for now
         val startButton = findViewById<Button>(R.id.idBtnStart)
     }
-    // change screen on start -- this will go to the 3rd screen
-    //  but testing use of passing data here for now
+
     fun onStartBtnClick(view: android.view.View) {
         val question1 = findViewById<EditText>(R.id.idQues1).text.toString()
         val answer1 = findViewById<EditText>(R.id.idAns1).text.toString()

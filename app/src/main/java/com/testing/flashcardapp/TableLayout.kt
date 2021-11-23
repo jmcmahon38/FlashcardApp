@@ -23,6 +23,11 @@ class TableLayout : AppCompatActivity() {
         // change screen on start -- this will go to the 3rd screen
         //  but testing use of passing data here for now
         val startButton = findViewById<Button>(R.id.idBtnStart)
+        var backBtn = findViewById<Button>(R.id.idBtnBack)
+        backBtn.setOnClickListener {
+            var intent = Intent(this,MainActivity::class.java)
+            startActivity(intent)
+        }
     }
 
     fun onStartBtnClick(view: android.view.View) {

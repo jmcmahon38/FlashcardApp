@@ -1,0 +1,42 @@
+// tableLayout
+
+// notes
+//        var checked = mutableListOf<String?>(
+//            "${findViewById<CheckBox>(R.id.idCheckBox1)},${findViewById<CheckBox>(R.id.idCheckBox2)},${findViewById<CheckBox>(R.id.idCheckBox4)}"+
+//                        "${findViewById<CheckBox>(R.id.idCheckBox4)},${findViewById<CheckBox>(R.id.idCheckBox5)},${findViewById<CheckBox>(R.id.idCheckBox6)}"+
+//                        "${findViewById<CheckBox>(R.id.idCheckBox7)},${findViewById<CheckBox>(R.id.idCheckBox8)},${findViewById<CheckBox>(R.id.idCheckBox9)}")
+//        var questions = mutableListOf<String?>(
+//            "${findViewById<EditText>(R.id.idQues1).text.toString()},${findViewById<EditText>(R.id.idQues2).text},${findViewById<EditText>(R.id.idQues3).text}"+
+//                        "${findViewById<EditText>(R.id.idQues4).text},${findViewById<EditText>(R.id.idQues5).text},${findViewById<EditText>(R.id.idQues6).text}"+
+//                        "${findViewById<EditText>(R.id.idQues7).text},${findViewById<EditText>(R.id.idQues8).text},${findViewById<EditText>(R.id.idQues9).text}")
+//
+//        var answers = mutableListOf<String?>(
+//            "${findViewById<EditText>(R.id.idAns1).text},${findViewById<EditText>(R.id.idAns2).text},${findViewById<EditText>(R.id.idAns3).text}"+
+//                        "${findViewById<EditText>(R.id.idAns4).text},${findViewById<EditText>(R.id.idAns5).text},${findViewById<EditText>(R.id.idAns6).text}"+
+//                        "${findViewById<EditText>(R.id.idAns7).text},${findViewById<EditText>(R.id.idAns8).text},${findViewById<EditText>(R.id.idAns9).text}"
+//            )
+//    }
+//        startButton.setOnClickListener {
+//
+//            val testing = findViewById<CheckBox>(R.id.idCheckBox1)
+//            if (testing.isChecked) {
+//
+//            }
+//            for (chkValue in checked) {
+//                println(chkValue)
+//                for (q in questions) {20
+//                    println(q)
+//                    for (a in answers) {
+//                        var question = Question(
+//                            chkValue,
+//                            q,
+//                            a
+//                        )
+//                        questionList.add(question)
+//                    }
+//                }
+//            }
+//        }
+//
+//    }
+//}

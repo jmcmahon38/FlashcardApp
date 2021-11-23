@@ -1,0 +1,389 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp">
+
+    <TableRow
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal|center_vertical"
+        android:padding="5dp">
+
+        <Button
+            android:id="@+id/idBtnBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/txtBtnBack" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="0"
+            android:padding="10sp"
+            android:text="@string/txtTableTitle"
+            android:textColor="#000000"
+            android:textSize="14sp" />
+
+        <Button
+            android:id="@+id/idBtnStart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="onStartBtnClick"
+            android:text="@string/txtBtnStart" />
+
+    </TableRow>
+
+    <TableRow
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal|center_vertical">
+
+        <TextView
+            android:id="@+id/idIncHead"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="0"
+            android:padding="10sp"
+            android:text="@string/txtChkBox" />
+
+        <TextView
+            android:id="@+id/txtQuesHead"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="1"
+            android:padding="10sp"
+            android:text="@string/txtQuestion" />
+
+        <TextView
+            android:id="@+id/txtAnsHead"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="2"
+            android:padding="10sp"
+            android:text="@string/txtAnswer" />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal|center_vertical">
+
+        <CheckBox
+            android:id="@+id/idCheckBox1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="0"
+            android:checked="false"
+            android:editable="false"
+            android:padding="10sp"
+            android:text="" />
+
+        <EditText
+            android:id="@+id/idQues1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="1"
+            android:editable="true"
+            android:hint="@string/txtQuestion"
+            android:inputType="text"
+            android:padding="10sp"
+            android:selectAllOnFocus="true"
+            android:text="" />
+
+        <EditText
+            android:id="@+id/idAns1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="2"
+            android:editable="false"
+            android:hint="@string/txtAnswer"
+            android:inputType="text"
+            android:padding="10sp"
+            android:selectAllOnFocus="true"
+            android:text="" />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal|center_vertical">
+
+        <CheckBox
+            android:id="@+id/idCheckBox2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="0"
+            android:padding="10sp"
+            android:text="" />
+
+        <EditText
+            android:id="@+id/idQues2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="1"
+            android:editable="true"
+            android:hint="@string/txtQuestion"
+            android:inputType="text"
+            android:padding="10sp"
+            android:selectAllOnFocus="true"
+            android:text="" />
+
+        <EditText
+            android:id="@+id/idAns2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="2"
+            android:hint="@string/txtAnswer"
+            android:padding="10sp"
+            android:text="" />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal|center_vertical">
+
+        <CheckBox
+            android:id="@+id/idCheckBox3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="0"
+            android:padding="10sp"
+            android:text="" />
+
+        <EditText
+            android:id="@+id/idQues3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="1"
+            android:editable="true"
+            android:hint="@string/txtQuestion"
+            android:inputType="text"
+            android:padding="10sp"
+            android:text="" />
+
+        <EditText
+            android:id="@+id/idAns3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="2"
+            android:hint="@string/txtAnswer"
+            android:padding="10sp"
+            android:text="" />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal|center_vertical">
+
+        <CheckBox
+            android:id="@+id/idCheckBox4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="0"
+            android:padding="10sp"
+            android:text="" />
+
+        <EditText
+            android:id="@+id/idQues4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="1"
+            android:editable="true"
+            android:hint="@string/txtQuestion"
+            android:inputType="text"
+            android:padding="10sp"
+            android:text="" />
+
+        <EditText
+            android:id="@+id/idAns4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="2"
+            android:editable="true"
+            android:hint="@string/txtAnswer"
+            android:inputType="text"
+            android:padding="10sp"
+            android:text="" />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal|center_vertical">
+
+        <CheckBox
+            android:id="@+id/idCheckBox5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="0"
+            android:padding="10sp"
+            android:text="" />
+
+        <EditText
+            android:id="@+id/idQues5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="1"
+            android:editable="true"
+            android:hint="@string/txtQuestion"
+            android:inputType="text"
+            android:padding="10sp"
+            android:text="" />
+
+        <EditText
+            android:id="@+id/idAns5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="2"
+            android:editable="true"
+            android:hint="@string/txtAnswer"
+            android:inputType="text"
+            android:padding="10sp"
+            android:text="" />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal|center_vertical">
+
+        <CheckBox
+            android:id="@+id/idCheckBox6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="0"
+            android:padding="10sp"
+            android:text="" />
+
+        <EditText
+            android:id="@+id/idQues6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="1"
+            android:hint="@string/txtQuestion"
+            android:padding="10sp"
+            android:text="" />
+
+        <EditText
+            android:id="@+id/idAns6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="2"
+            android:hint="@string/txtAnswer"
+            android:padding="10sp"
+            android:text="" />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal|center_vertical">
+
+        <CheckBox
+            android:id="@+id/idCheckBox7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="0"
+            android:padding="10sp"
+            android:text="" />
+
+        <EditText
+            android:id="@+id/idQues7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="1"
+            android:editable="true"
+            android:hint="@string/txtQuestion"
+            android:inputType="text"
+            android:padding="10sp"
+            android:text="" />
+
+        <EditText
+            android:id="@+id/idAns7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="2"
+            android:editable="true"
+            android:hint="@string/txtAnswer"
+            android:inputType="text"
+            android:padding="10sp"
+            android:text="" />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal|center_vertical">
+
+        <CheckBox
+            android:id="@+id/idCheckBox8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="0"
+            android:padding="10sp"
+            android:text="" />
+
+        <EditText
+            android:id="@+id/idQues8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="1"
+            android:editable="true"
+            android:hint="@string/txtQuestion"
+            android:inputType="text"
+            android:padding="10sp"
+            android:text="" />
+
+        <EditText
+            android:id="@+id/idAns8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="2"
+            android:editable="true"
+            android:hint="@string/txtAnswer"
+            android:inputType="text"
+            android:padding="10sp"
+            android:text="" />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal|center_vertical">
+
+        <CheckBox
+            android:id="@+id/idCheckBox9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="0"
+            android:editable="true"
+            android:inputType="text"
+            android:padding="10sp"
+            android:text="" />
+
+        <EditText
+            android:id="@+id/idQues9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="1"
+            android:editable="true"
+            android:hint="@string/txtQuestion"
+            android:padding="10sp"
+            android:text="" />
+
+        <EditText
+            android:id="@+id/idAns9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="2"
+            android:editable="true"
+            android:hint="@string/txtAnswer"
+            android:padding="10sp"
+            android:text="" />
+    </TableRow>
+</TableLayout>

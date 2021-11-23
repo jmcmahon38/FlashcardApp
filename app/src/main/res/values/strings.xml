@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">FlashcardApp</string>
+    <!--    table_layout strings-->
+    <string name="txtBtnBack">Back</string>
+    <string name="txtChkBox">Include</string>
+    <string name="txtQuestion">Question</string>
+    <string name="txtAnswer">Answer</string>
+    <string name="txtTableTitle">Enter Flash Card Details Here</string>
+    <!--    main layout strings-->
+    <string name="txtTitle">Flashcard App</string>
+    <string name="txtIntervalHint">Card Interval in Seconds</string>
+    <string name="txtBtnEdit">Edit Cards</string>
+    <string name="txtBtnStart">Start</string>
+    <string name="txt1">
+        <ul>
+            <li>Enter the number of seconds between each card.</li>
+        </ul>
+    </string>
+    <string name="txt2">
+        <ul>
+            <li>Click the "Edit Cards" button to create the flashcards. Press Start when you are ready.</li>
+        </ul>
+    </string>
+
+</resources>

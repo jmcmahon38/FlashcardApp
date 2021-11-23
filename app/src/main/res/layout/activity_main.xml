@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/idTxt2"
+        android:layout_width="365dp"
+        android:layout_height="57dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="40dp"
+        android:editable="true"
+        android:text="@string/txt2"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/idTxt1" />
+
+    <TextView
+        android:id="@+id/idTitle"
+        android:layout_width="353dp"
+        android:layout_height="53dp"
+        android:gravity="center_horizontal|center_vertical"
+        android:text="@string/txtTitle"
+        android:textSize="28sp"
+        tools:layout_editor_absoluteX="29dp"
+        tools:layout_editor_absoluteY="22dp" />
+
+    <Button
+        android:id="@+id/idBtnEdit"
+        android:layout_width="130dp"
+        android:layout_height="51dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="48dp"
+        android:text="@string/txtBtnEdit"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/idTxt2" />
+
+    <EditText
+        android:id="@+id/idInterval"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:ems="10"
+        android:hint="@string/txtIntervalHint"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/idTitle" />
+
+    <Button
+        android:id="@+id/idBtnStart"
+        android:layout_width="117dp"
+        android:layout_height="52dp"
+        android:layout_marginTop="48dp"
+        android:text="@string/txtBtnStart"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.859"
+        app:layout_constraintStart_toEndOf="@+id/idBtnEdit"
+        app:layout_constraintTop_toBottomOf="@+id/idTxt2" />
+
+    <TextView
+        android:id="@+id/idTxt1"
+        android:layout_width="370dp"
+        android:layout_height="54dp"
+        android:layout_marginTop="24dp"
+        android:editable="true"
+        android:text="@string/txt1"
+        android:textSize="18sp"
+        app:layout_constraintTop_toBottomOf="@+id/idInterval"
+        tools:layout_editor_absoluteX="29dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

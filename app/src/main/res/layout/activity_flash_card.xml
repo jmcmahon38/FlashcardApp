@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FlashCard">
+
+    <TextView
+        android:id="@+id/idQuesTitle"
+        android:layout_width="382dp"
+        android:layout_height="39dp"
+        android:layout_marginTop="32dp"
+        android:gravity="center_horizontal|center_vertical"
+        android:text="@string/txtTitle"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.62"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnSubmit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="192dp"
+        android:layout_marginTop="28dp"
+        android:text="@string/txtBtnSubmit"
+        app:layout_constraintStart_toEndOf="@+id/btnStartStop"
+        app:layout_constraintTop_toBottomOf="@+id/idPopInterval" />
+
+    <Button
+        android:id="@+id/btnStartStop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="28dp"
+        android:text="@string/txtBtnStop"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/idPopInterval" />
+
+    <TextView
+        android:id="@+id/idPopQuest"
+        android:layout_width="372dp"
+        android:layout_height="117dp"
+        android:text="TextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.487"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/idQuesTitle" />
+
+    <TextView
+        android:id="@+id/idPopInterval"
+        android:layout_width="360dp"
+        android:layout_height="66dp"
+        android:layout_marginTop="7dp"
+        android:text="00:00"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/idPopAns" />
+
+    <EditText
+        android:id="@+id/idPopAns"
+        android:layout_width="361dp"
+        android:layout_height="149dp"
+        android:layout_marginTop="1dp"
+        android:ems="10"
+        android:hint="@string/txtPopAnsHint"
+        android:inputType="text"
+        android:selectAllOnFocus="true"
+        android:textIsSelectable="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/idPopQuest" />
+</androidx.constraintlayout.widget.ConstraintLayout>

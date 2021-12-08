@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.FlashcardApp">
         <activity
+            android:name=".FlashCard"
+            android:exported="false" />
+        <activity
             android:name=".TableLayout"
             android:exported="false" />
         <activity

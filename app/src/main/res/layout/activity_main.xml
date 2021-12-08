@@ -22,11 +22,13 @@
         android:id="@+id/idTitle"
         android:layout_width="353dp"
         android:layout_height="53dp"
+        android:layout_marginTop="16dp"
         android:gravity="center_horizontal|center_vertical"
         android:text="@string/txtTitle"
         android:textSize="28sp"
-        tools:layout_editor_absoluteX="29dp"
-        tools:layout_editor_absoluteY="22dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/idBtnEdit"
@@ -40,9 +42,9 @@
 
     <EditText
         android:id="@+id/idInterval"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="24dp"
+        android:layout_width="234dp"
+        android:layout_height="57dp"
+        android:layout_marginTop="20dp"
         android:ems="10"
         android:hint="@string/txtIntervalHint"
         android:inputType="number"
@@ -52,7 +54,7 @@
         app:layout_constraintTop_toBottomOf="@+id/idTitle" />
 
     <Button
-        android:id="@+id/idBtnStart"
+        android:id="@+id/idBtnStart1"
         android:layout_width="117dp"
         android:layout_height="52dp"
         android:layout_marginTop="48dp"
@@ -70,7 +72,8 @@
         android:editable="true"
         android:text="@string/txt1"
         android:textSize="18sp"
-        app:layout_constraintTop_toBottomOf="@+id/idInterval"
-        tools:layout_editor_absoluteX="29dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/idInterval" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -16,27 +16,23 @@
 //                        "${findViewById<EditText>(R.id.idAns7).text},${findViewById<EditText>(R.id.idAns8).text},${findViewById<EditText>(R.id.idAns9).text}"
 //            )
 //    }
-//        startButton.setOnClickListener {
-//
-//            val testing = findViewById<CheckBox>(R.id.idCheckBox1)
-//            if (testing.isChecked) {
-//
-//            }
-//            for (chkValue in checked) {
-//                println(chkValue)
-//                for (q in questions) {20
-//                    println(q)
-//                    for (a in answers) {
-//                        var question = Question(
-//                            chkValue,
-//                            q,
-//                            a
-//                        )
-//                        questionList.add(question)
-//                    }
-//                }
-//            }
-//        }
-//
-//    }
-//}
+
+        startButton.setOnClickListener{
+            for (chkValue in checked) {
+                if (chkValue!!.isChecked) {
+                    for (q in questions) {
+                        for (a in answers) {
+                            var question = Question(
+                                chkValue,
+                                q!!,
+                                a!!
+                            )
+                            questionList.add(question)
+                        }
+                    }
+                } else (continue)
+            }
+            val flashCardScreen = Intent(this@TableLayout, FlashCard::class.java)
+            flashCardScreen.putExtra("QuestionList", questionList)
+            startActivity(flashCardScreen)
+        }

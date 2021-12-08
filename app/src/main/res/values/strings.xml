@@ -21,5 +21,10 @@
             <li>Click the "Edit Cards" button to create the flashcards. Press Start when you are ready.</li>
         </ul>
     </string>
-
+<!--    flashCard layout strings-->
+    <string name="txtPopQuestHint">Question will show here</string>
+    <string name="txtPopAnsHint">Enter Answer Here</string>
+    <string name="txtBtnStop">Stop</string>
+    <string name="txtBtnSubmit">Submit</string>
+    <string name="formatted_time">%02d:%02d</string>
 </resources>

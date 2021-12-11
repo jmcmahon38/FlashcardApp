@@ -43,7 +43,7 @@
         android:id="@+id/idPopQuest"
         android:layout_width="372dp"
         android:layout_height="117dp"
-        android:text="TextView"
+        android:textSize="18sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.487"
         app:layout_constraintStart_toStartOf="parent"

@@ -24,7 +24,7 @@
 <!--    flashCard layout strings-->
     <string name="txtPopQuestHint">Question will show here</string>
     <string name="txtPopAnsHint">Enter Answer Here</string>
-    <string name="txtBtnStop">Stop</string>
+    <string name="txtBtnStop">Start</string>
     <string name="txtBtnSubmit">Submit</string>
     <string name="formatted_time">%02d:%02d</string>
 </resources>

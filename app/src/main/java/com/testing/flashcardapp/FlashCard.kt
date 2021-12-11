@@ -21,7 +21,9 @@ class FlashCard : AppCompatActivity() {
     private var isStarted = false // timer
     private var questions = mutableListOf<String?>()
     private var answers = mutableListOf<String?>()
-    private var userInterval: String? = null
+    var userInterval: Long = 1000 * 10 // cant get intent to transfer
+
+
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -33,6 +35,20 @@ class FlashCard : AppCompatActivity() {
             var ans1 = extras.getString("Ans1")
             var ques2 = extras.getString("Ques2")
             var ans2 = extras.getString("Ans2")
+            var ques3 = extras.getString("Ques3")
+            var ans3 = extras.getString("Ans3")
+            var ques4 = extras.getString("Ques4")
+            var ans4 = extras.getString("Ans4")
+            var ques5 = extras.getString("Ques5")
+            var ans5 = extras.getString("Ans5")
+            var ques6 = extras.getString("Ques6")
+            var ans6 = extras.getString("Ans6")
+            var ques7 = extras.getString("Ques7")
+            var ans7 = extras.getString("Ans7")
+            var ques8 = extras.getString("Ques8")
+            var ans8 = extras.getString("Ans8")
+            var ques9 = extras.getString("Ques9")
+            var ans9 = extras.getString("Ans9")
 
             if (ques1 != "") {
                 questions.add(ques1)
@@ -46,7 +62,48 @@ class FlashCard : AppCompatActivity() {
             if (ans2 != "") {
                 answers.add(ans2)
             }
-
+            if (ques3 != "") {
+                questions.add(ques3)
+            }
+            if (ans3 != "") {
+                answers.add(ans3)
+            }
+            if (ques4 != "") {
+                questions.add(ques4)
+            }
+            if (ans4 != "") {
+                answers.add(ans4)
+            }
+            if (ques5 != "") {
+                questions.add(ques5)
+            }
+            if (ans5 != "") {
+                answers.add(ans5)
+            }
+            if (ques6 != "") {
+                questions.add(ques6)
+            }
+            if (ans6 != "") {
+                answers.add(ans6)
+            }
+            if (ques7 != "") {
+                questions.add(ques7)
+            }
+            if (ans7 != "") {
+                answers.add(ans7)
+            }
+            if (ques8 != "") {
+                questions.add(ques8)
+            }
+            if (ans8 != "") {
+                answers.add(ans8)
+            }
+            if (ques9 != "") {
+                questions.add(ques9)
+            }
+            if (ans9 != "") {
+                answers.add(ans9)
+            }
         }
         initViews()
 
@@ -58,7 +115,7 @@ class FlashCard : AppCompatActivity() {
 
     private fun initViews() {
         tvTimer = findViewById(R.id.idPopInterval)
-        btnStartStop = findViewById(R.id.btnStartStop)
+        btnStartStop = findViewById(R.id.txtBtnStartStop)
         var txtQues = findViewById<TextView>(R.id.idPopQuest)
 
 
@@ -80,14 +137,14 @@ class FlashCard : AppCompatActivity() {
     }
 
     // need the value 30 to equal extras.getString("Interval")
-    private var countDownTimer = object : CountDownTimer(1000 * 10, 1000) {
-        override fun onTick(millisUntilFinished: Long) {
-            Log.d(TAG, "onTick: ${millisUntilFinished / 1000f}")
+    private var countDownTimer = object : CountDownTimer(userInterval, 1000) {
+        override fun onTick(userInterval: Long) {
+            Log.d(TAG, "onTick: ${userInterval / 1000f}")
             // update text
             tvTimer?.text = getString(
                 R.string.formatted_time,
-                TimeUnit.MILLISECONDS.toMinutes(millisUntilFinished) % 60,
-                TimeUnit.MILLISECONDS.toSeconds(millisUntilFinished) % 60
+                TimeUnit.MILLISECONDS.toMinutes(userInterval) % 60,
+                TimeUnit.MILLISECONDS.toSeconds(userInterval) % 60
             )
         }
 
@@ -124,7 +181,7 @@ class FlashCard : AppCompatActivity() {
         countDownTimer.cancel()
         isStarted = false
         btnStartStop?.text = "Start"
-        tvTimer?.text = "00:10"
+        tvTimer?.text = "00:10" //can't get intent to transfer'
         txtAns.setText("")
 
     }

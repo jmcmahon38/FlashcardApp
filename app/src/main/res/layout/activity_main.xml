@@ -8,11 +8,11 @@
 
     <TextView
         android:id="@+id/idTxt2"
-        android:layout_width="365dp"
-        android:layout_height="57dp"
-        android:layout_marginStart="28dp"
-        android:layout_marginTop="40dp"
-        android:editable="true"
+        android:layout_width="367dp"
+        android:layout_height="59dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="28dp"
+        android:editable="false"
         android:text="@string/txt2"
         android:textSize="18sp"
         app:layout_constraintStart_toStartOf="parent"
@@ -34,8 +34,8 @@
         android:id="@+id/idBtnEdit"
         android:layout_width="130dp"
         android:layout_height="51dp"
-        android:layout_marginStart="36dp"
-        android:layout_marginTop="48dp"
+        android:layout_marginStart="140dp"
+        android:layout_marginTop="60dp"
         android:text="@string/txtBtnEdit"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/idTxt2" />
@@ -53,26 +53,16 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/idTitle" />
 
-    <Button
-        android:id="@+id/idBtnStart1"
-        android:layout_width="117dp"
-        android:layout_height="52dp"
-        android:layout_marginTop="48dp"
-        android:text="@string/txtBtnStart"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.859"
-        app:layout_constraintStart_toEndOf="@+id/idBtnEdit"
-        app:layout_constraintTop_toBottomOf="@+id/idTxt2" />
-
     <TextView
         android:id="@+id/idTxt1"
         android:layout_width="370dp"
         android:layout_height="54dp"
-        android:layout_marginTop="24dp"
-        android:editable="true"
+        android:layout_marginTop="48dp"
+        android:editable="false"
         android:text="@string/txt1"
         android:textSize="18sp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.487"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/idInterval" />
 

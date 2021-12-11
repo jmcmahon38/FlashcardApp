@@ -57,8 +57,6 @@ class TableLayout : AppCompatActivity() {
         val ans9 = findViewById<EditText>(R.id.idAns9)
 
         val extras = intent.extras
-
-
         val startButton = findViewById<Button>(R.id.idBtnStart2)
         var backBtn = findViewById<Button>(R.id.idBtnBack)
         backBtn.setOnClickListener {
@@ -66,10 +64,11 @@ class TableLayout : AppCompatActivity() {
             startActivity(intent)
         }
         startButton.setOnClickListener{
-            val flashCardScreen = Intent(this@TableLayout, FlashCard::class.java)
+            val flashCardScreen = Intent(this, FlashCard::class.java)
             if (extras != null) {
                 var interval = extras.getString("Interval")
-                flashCardScreen.putExtra("Interval", interval)
+                println("$interval")
+                flashCardScreen.putExtra("Interval", interval!!.toLong())
             }
             if (chk1!!.isChecked) {
                 flashCardScreen.putExtra("Ques1", ques1.text.toString())
@@ -85,6 +84,56 @@ class TableLayout : AppCompatActivity() {
                 flashCardScreen.putExtra("Ques2", "")
                 flashCardScreen.putExtra("Ans2", "")
             }
+            if (chk3!!.isChecked) {
+                flashCardScreen.putExtra("Ques3", ques3.text.toString())
+                flashCardScreen.putExtra("Ans3", ans3.text.toString())
+            } else{
+                flashCardScreen.putExtra("Ques3", "")
+                flashCardScreen.putExtra("Ans3", "")
+            }
+            if (chk4!!.isChecked) {
+                flashCardScreen.putExtra("Ques4", ques4.text.toString())
+                flashCardScreen.putExtra("Ans4", ans4.text.toString())
+            } else{
+                flashCardScreen.putExtra("Ques4", "")
+                flashCardScreen.putExtra("Ans4", "")
+            }
+            if (chk5!!.isChecked) {
+                flashCardScreen.putExtra("Ques5", ques5.text.toString())
+                flashCardScreen.putExtra("Ans5", ans5.text.toString())
+            } else{
+                flashCardScreen.putExtra("Ques5", "")
+                flashCardScreen.putExtra("Ans5", "")
+            }
+            if (chk6!!.isChecked) {
+                flashCardScreen.putExtra("Ques6", ques6.text.toString())
+                flashCardScreen.putExtra("Ans6", ans6.text.toString())
+            } else{
+                flashCardScreen.putExtra("Ques6", "")
+                flashCardScreen.putExtra("Ans6", "")
+            }
+            if (chk7!!.isChecked) {
+                flashCardScreen.putExtra("Ques7", ques7.text.toString())
+                flashCardScreen.putExtra("Ans7", ans7.text.toString())
+            } else{
+                flashCardScreen.putExtra("Ques7", "")
+                flashCardScreen.putExtra("Ans7", "")
+            }
+            if (chk8!!.isChecked) {
+                flashCardScreen.putExtra("Ques8", ques8.text.toString())
+                flashCardScreen.putExtra("Ans8", ans8.text.toString())
+            } else{
+                flashCardScreen.putExtra("Ques8", "")
+                flashCardScreen.putExtra("Ans8", "")
+            }
+            if (chk9!!.isChecked) {
+                flashCardScreen.putExtra("Ques9", ques9.text.toString())
+                flashCardScreen.putExtra("Ans9", ans9.text.toString())
+            } else{
+                flashCardScreen.putExtra("Ques9", "")
+                flashCardScreen.putExtra("Ans9", "")
+            }
+
             startActivity(flashCardScreen)
         }
 

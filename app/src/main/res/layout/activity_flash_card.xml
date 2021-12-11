@@ -26,11 +26,11 @@
         android:layout_marginStart="192dp"
         android:layout_marginTop="28dp"
         android:text="@string/txtBtnSubmit"
-        app:layout_constraintStart_toEndOf="@+id/btnStartStop"
+        app:layout_constraintStart_toEndOf="@+id/txtBtnStartStop"
         app:layout_constraintTop_toBottomOf="@+id/idPopInterval" />
 
     <Button
-        android:id="@+id/btnStartStop"
+        android:id="@+id/txtBtnStartStop"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
